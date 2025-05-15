@@ -22,7 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           # あなたのスクリプトで使うライブラリを追加
-          pip install pandas scikit-learn pytest flake8 black mypy pytest-cov
+          pip install pandas scikit-learn pytest flake8 black mypy pytest-cov seaborn great_expectations
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Evaluate models and generate metrics
