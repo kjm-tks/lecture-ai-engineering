@@ -49,7 +49,7 @@ jobs:
 
       - name: Upload metrics.csv artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: model-metrics
-          path: metrics.csvgit push origin develop
+          path: metrics.csvgit
