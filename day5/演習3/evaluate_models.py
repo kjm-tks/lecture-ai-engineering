@@ -7,7 +7,7 @@ from sklearn.metrics         import accuracy_score, f1_score, roc_auc_score
 
 def load_data():
     # Titanic CSV はリポジトリの data/ 以下に置く想定
-    df = pd.read_csv('data/titanic.csv')
+    df = pd.read_csv('data/Titanic.csv')
     # 必要に応じて欠損値処理やカテゴリ変換を行ってください
     X = df[['Pclass','Age','SibSp','Parch','Fare']].fillna(0)
     y = df['Survived']
